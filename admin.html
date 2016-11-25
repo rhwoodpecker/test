@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <title>网页标题 </title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/style1.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="js/table.js"></script>
+
+ </head>
+
+ <body>
+	<div class="container">
+	<h2>用户管理表</h2>  
+	<span>编号:<input type="text" class="tiaojian"></span>
+	<span>用户名:<input type="text" class="tiaojian"></span>
+	<span>注册时段:<input type="text" class="tiaojian1">-<input type="text" class="tiaojian1"></span>
+	<span>账号类型:<select class="tiaojian2">
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select></span>
+					<input class="btn tiaojian3" type="button" value="搜索">
+	<table id="tab" class="table table-hover">
+		<thead>
+			<tr>
+				<th>操作</th>
+				<th>编号</th>
+				<th>用户名</th>
+				<th>状态</th>
+				<th>创建时间</th>
+				<th>最后登录时间</th>
+				<th>账号类型</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><input id="allCkb" type="checkbox"/></td>
+				<td>1</td>
+				<td>Tom</td>
+				<td><select >
+					  <option value="available">可用</option>
+					  <option value="disable">禁用</option>
+					</select></td>
+				<td>2016.11.25</td>
+				<td>2016.11.26</td>
+				<td>
+				
+				    <select >
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select>
+					
+				</td>
+			</tr>
+			<tr>
+				<td><input id="allCkb" type="checkbox"/></td>
+				<td>2</td>
+				<td>Tom</td>
+				<td><select >
+					  <option value="available">可用</option>
+					  <option value="disable">禁用</option>
+					</select></td>
+				<td>2016.11.25</td>
+				<td>2016.11.26</td>
+				<td>
+				    <select >
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input id="allCkb" type="checkbox"/></td>
+				<td>3</td>
+				<td>Tom</td>
+				<td><select >
+					  <option value="available">可用</option>
+					  <option value="disable">禁用</option>
+					</select></td>
+				<td>2016.11.25</td>
+				<td>2016.11.26</td>
+				<td>
+				     <select >
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><input id="allCkb" type="checkbox"/></td>
+				<td>4</td>
+				<td>Tom</td>
+				<td><select >
+					  <option value="available">可用</option>
+					  <option value="disable">禁用</option>
+					</select></td>
+				<td>2016.11.25</td>
+				<td>2016.11.26</td>
+				<td><select >
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><input id="allCkb" type="checkbox"/></td>
+				<td>5</td>
+				<td>Tom</td>
+				<td><select >
+					  <option value="available">可用</option>
+					  <option value="disable">禁用</option>
+					</select></td>
+				<td>2016.11.25</td>
+				<td>2016.11.26</td>
+				<td><select >
+					  <option value="user">普通用户</option>
+					  <option value="admin">管理员</option>
+					</select></td>
+			</tr>
+		</tbody>
+	</table>
+	<section>
+		<input class="btn" type="button" value="添加">
+		<input class="btn" type="button" value="删除">
+		<input class="btn" type="button" value="修改">
+		<input class="btn" type="button" value="启封">
+		<input class="btn" type="button" value="启封">
+	</section>
+	</div>
+</body>
+</html>

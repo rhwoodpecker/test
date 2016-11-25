@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <title>用户注册</title>    
+  </head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/style.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <section class="loginBox row-fluid">
+          <section >
+            <h2 >用户注册</h2>
+            <div class="input-prepend">
+			  <span class="add-on">用户名&nbsp;</span>
+			  <input id="Uname" type="text" placeholder="Username 6-15位数字、字母"  >
+			</div>
+			<div class="input-prepend">
+			  <span class="add-on">密码&nbsp;&nbsp;</span>
+			  <input id="pass1" type="password" placeholder="Password 6-15位数字、字母">
+			</div>
+			<div class="input-prepend">
+			  <span class="add-on">确认密码</span>
+			  <input id="pass2" type="password" placeholder="Again input Password">
+			</div>
+            <section >
+				 <input id="reg" type="submit" value=" 确认注册 " class="btn btn-primary ">
+            </section>
+          </section>
+        </section><!-- /loginBox -->
+    </div> <!-- /container -->
+	<script type="text/javascript">
+		/* 
+		 * 
+		 * 这里对用户输入的注册信息进行验证是否合法
+		 * username、password进行了正则表达式判定是否合法
+		 * 所有信息输入合法则跳转到百度首页
+		 */
+		$("#reg").click(function(){            //为按钮绑定单机函数
+			var username=$("#Uname").val();   //获取用户输入用户名
+			var password=$("#pass1").val();   //获取用户输入密码
+			var againpass=$("#pass2").val();  //获取用户再次输入密码
+			var standUname=/^[a-zA-Z0-9]{6,15}$/;  //正则表达式  6-15位的数字和大小写字母
+			var standUpass=/^[a-zA-Z0-9]{6,15}$/;  
+			//对用户名和密码的条件判断
+			if (standUname.test(username) && standUpass.test(password) && againpass==password)
+			{
+				alert('恭喜您注册成功！即将跳转到百度!!');
+				window.location.href="http://www.baidu.com"
+			}else if(standUname.test(username)==false){
+				alert('用户名格式不正确，必须是6-15位数字、字母');
+			}else if(standUname.test(username) && standUpass.test(password)==false){
+				alert('密码格式不正确，必须是6-15位的数字、字母');
+			}else if(standUname.test(username) && standUpass.test(password) && againpass!=password)
+				alert('两次输入密码不一致');
+				
+		});
+			
+		
+	</script>
+ 
+  </body>
+</html>

@@ -1,0 +1,51 @@
+ h2{
+	text-align:center;
+	font-weight:bold;
+ }
+  body{
+  font-family:"宋体";
+  }
+  /*
+   *对整个登录块元素的样式
+   */
+  .loginBox{
+  width:284px;
+  height:250px;
+  padding:0 20px;
+  border:1px solid #fff; 
+  color:#000;  
+  border-radius:8px;  /*css3属性*/
+  background: white;
+  box-shadow:0 0 15px #222; 
+  position:fixed;
+  left:40%;
+  top:30%;
+
+
+  }
+
+  /*
+   *对h2字体样式控制
+   */
+  .loginBox h2{
+  height:45px;
+  font-size:20px;
+  font-weight:normal;
+  }
+
+ /*
+  * 修改bootstrap按钮样式
+  */
+ 
+  .btn:first-child{
+  margin-left:0;
+  margin-top:10px;
+  padding-top:6px;
+  width:287px;
+  }
+  
+  .select{
+  margin:0;
+  padding:0;
+  width:50px;
+  }

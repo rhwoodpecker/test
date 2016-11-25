@@ -1,0 +1,61 @@
+
+/*
+ * 去边距
+ */
+*{
+		margin:0;
+		padding:0;
+	}
+ /*
+  *设置字体
+  */
+ body{
+  font-family:"宋体";
+  }
+  /*
+   * 对整个块的样式控制
+   */
+  .container{
+	width:65%;
+	border:1px solid #fff;
+	margin-top:80px;
+	color:#000;  
+    border-radius:8px;
+	box-shadow:0 0 15px #222;
+	padding:20px;
+  }
+
+  h2{
+	text-align:center;
+	font-weight:bold;
+ }
+  /*
+   * 按钮的样式控制
+   */
+  select{
+  margin:0;
+  padding:0;
+  width:80px;
+  height:25px;
+  }
+  /*
+   * 条件栏的样式控制
+   */
+  .tiaojian{
+	width:100px;
+	
+  }
+  .tiaojian1{
+	width:80px;
+  }
+  .tiaojian2{
+	height:30px;
+	margin-bottom:8px;
+  }
+  span{
+	font-size:18px;
+  }
+  .tiaojian3{
+	margin-bottom:8px;
+	margin-left:20px;
+  }
